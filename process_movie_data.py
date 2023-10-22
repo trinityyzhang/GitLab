@@ -17,7 +17,7 @@ def find_top_10(filename):
     # Reformat some data types
     for row in rows:
         row["Gross"] = int(row["Gross"])
-        row["Year"] = int(row["Release Date"][:9])
+        row["Year"] = int(row["Release Date"][:4])
 
     # Sort data and get top 10
     gross_sort = lambda x : x["Gross"]
