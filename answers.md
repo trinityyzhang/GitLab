@@ -52,12 +52,16 @@ git checkout test
 git merge top_N
 ```
 
+After running: This is merging branch top_N into branch test. Nothing seems to be changed because test is an ancestor of top_N. 
+
 6. What do you think would happen if you ran the following commands?
 What branches would change, and how?
 ```
 git checkout top_ten
 git merge test
 ```
+
+After running: the top_ten branch is updated to include the changes from the test branch, including the renaming of quiz.md to answers.md. Note: the 'recursive' strategy is used to merge branch 'test' into 'top_ten'.
 
 7. What do you think would happen if you ran the following commands?
 What branches would change, and how?
