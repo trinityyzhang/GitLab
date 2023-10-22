@@ -1,9 +1,8 @@
 #! /usr/bin/env python3
-# A script that imports movie data and finds the top-5 highest grossing movies
+# A script that imports movie data and finds the top n highest grossing movies
 import csv
 
-
-def find_top_n(filename, n=5):
+def find_top_n(filename, n=10):
     """Finds the top n highest grossing movies in a CSV dataset.
        Input: filename, a string - points to filename of dataset
        Output: None
@@ -17,7 +16,7 @@ def find_top_n(filename, n=5):
     # Reformat some data types
     for row in rows:
         row["Gross"] = int(row["Gross"])
-        row["Year"] = int(row["Release Date"][:4])
+        row["Year"] = int(row["Release Date"][:9])
 
     # Sort data and get top n
     gross_sort = lambda x : x["Gross"]
