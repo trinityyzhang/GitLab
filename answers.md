@@ -51,6 +51,7 @@ What branches would change, and how?
 git checkout test
 git merge top_N
 ```
+I would guess that in the test branch, process_movie_data.py would have both functions find_top_5 and find_top_n, and only the test branch would change.
 
 6. What do you think would happen if you ran the following commands?
 What branches would change, and how?
@@ -58,6 +59,7 @@ What branches would change, and how?
 git checkout top_ten
 git merge test
 ```
+I would guess that in the top-ten branch, process_movie_data.py would have both functions find_top_5 and find_top_n, and only the top_ten branch would change.
 
 7. What do you think would happen if you ran the following commands?
 What branches would change, and how?
@@ -66,3 +68,4 @@ git checkout test
 git rebase top_ten
 git rebase top_N
 ```
+I would guess that top_ten and top_N would no longer be branches based off of test. 
