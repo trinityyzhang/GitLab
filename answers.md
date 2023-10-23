@@ -51,7 +51,7 @@ What branches would change, and how?
 git checkout test
 git merge top_N
 ```
-This is merging branch top_N into branch test. Nothing seems to be changed because test is an ancestor of top_N. 
+This is merging branch top_N into branch test. The test branch is updated to include changes made in top_N, which is just updating find_top_5 to find_top_n. 
 
 6. What do you think would happen if you ran the following commands?
 What branches would change, and how?
