@@ -51,9 +51,7 @@ What branches would change, and how?
 git checkout test
 git merge top_N
 ```
-I would guess that in the test branch, process_movie_data.py would have both functions find_top_5 and find_top_n, and only the test branch would change.
-
-After running: This is merging branch top_N into branch test. Nothing seems to be changed because test is an ancestor of top_N. 
+This is merging branch top_N into branch test. Nothing seems to be changed because test is an ancestor of top_N. 
 
 6. What do you think would happen if you ran the following commands?
 What branches would change, and how?
@@ -61,9 +59,8 @@ What branches would change, and how?
 git checkout top_ten
 git merge test
 ```
-I would guess that in the top-ten branch, process_movie_data.py would have both functions find_top_5 and find_top_n, and only the top_ten branch would change.
 
-After running: the top_ten branch is updated to include the changes from the test branch, including the renaming of quiz.md to answers.md. Note: the 'recursive' strategy is used to merge branch 'test' into 'top_ten'.
+The top_ten branch is updated to include the changes from the test branch, including the renaming of quiz.md to answers.md. Note: the 'recursive' strategy is used to merge branch 'test' into 'top_ten'.
 
 7. What do you think would happen if you ran the following commands?
 What branches would change, and how?
