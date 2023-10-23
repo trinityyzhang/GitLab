@@ -51,7 +51,7 @@ What branches would change, and how?
 git checkout test
 git merge top_N
 ```
-This is merging branch 'top_N' into branch 'test'. The 'test' branch is updated to include changes made in 'top_N', which is just updating find_top_5 to find_top_n. 
+This is merging branch 'top_N' into branch 'test'. The 'test' branch is updated to include changes made in 'top_N', which is just updating find_top_5 to find_top_n. Note: the 'recursive' strategy is used to merge branch 'test' into 'top_ten'.
 
 6. What do you think would happen if you ran the following commands?
 What branches would change, and how?
@@ -60,7 +60,7 @@ git checkout top_ten
 git merge test
 ```
 
-The 'top_ten' branch is updated to include the changes from the 'test' branch, including the renaming of quiz.md to answers.md. Note: the 'recursive' strategy is used to merge branch 'test' into 'top_ten'.
+The 'top_ten' branch is updated to include the changes from the 'test' branch, including the renaming of quiz.md to answers.md with the updated answers, and find_top_10 is changed to find_top_5 again (consistent with the 'test' branch). Note: the 'recursive' strategy is used to merge branch 'test' into 'top_ten'.
 
 7. What do you think would happen if you ran the following commands?
 What branches would change, and how?
